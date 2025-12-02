@@ -2349,7 +2349,8 @@ html{
     left:0;
     bottom:0;
     right:0;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     z-index:var(--z-index-average);
     display:none;
     flex-direction:column;

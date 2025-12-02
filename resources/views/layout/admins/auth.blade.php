@@ -19,9 +19,7 @@
        body{
   
    background-color: var(--bg);
-background-image: url("{{ asset('images/background.jpg') }}");
-background-size:cover;
-background-position:center;
+
   
 }
     </style>

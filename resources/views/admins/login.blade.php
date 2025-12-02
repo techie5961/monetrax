@@ -4,17 +4,17 @@
 @endsection
 @section('main')
     <section class="column p-10  w-full flex-auto justify-center">
-        <form style="backdrop-filter: blur(20px);box-shadow:inset 0 0 50px var(--bg-light)"  action="{{ url('admins/post/login/process') }}" method="POST" onsubmit="PostRequest(event,this,call_back)" class="w-full border-1 border-color-silver max-w-500 p-10 align-center br-10 bg-transparent c-white column g-5">
+        <form action="{{ url('admins/post/login/process') }}" method="POST" onsubmit="PostRequest(event,this,call_back)" class="w-full max-w-500 p-10 align-center br-10 bg-transparent c-white column g-5">
             <img src="{{ asset('favicon/logo.png?v=1.3') }}" class="w-quarter" alt="">
            <span style="font-family:titan one" class="c-primary desc">Admin Login</span>
              <span class="m-bottom-20">Login with your credentials</span>
            <input type="hidden" class="input" name="_token" value="{{ csrf_token() }}">
             <label for="" class="m-right-auto">Admin Tag</label>
-           <div  class="cont row align-center bg-secondary-dark w-full h-50 border-1 br-5 border-color-silver">
+           <div style="border:1px solid var(--bg-lighter)" class="cont  row align-center bg-light w-full h-50 border-1 border-color-silver">
                 <input autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" type="text" placeholder="Enter your Admin Tag" name="tag" class="inp c-white input required w-full h-full no-border bg-transparent br-10">
             </div>
               <label for="" class="m-right-auto m-top-10">Password</label>
-            <div  class="cont row align-center bg-secondary-dark w-full h-50 border-1 br-5 border-color-silver">
+            <div style="border:1px solid var(--bg-lighter)"  class="cont row align-center bg-light w-full h-50 border-1 border-color-silver">
                 <input autocomplete="new-password" type="password" placeholder="Enter your Account Password" name="password" class="inp input required w-full h-full c-white no-border bg-transparent br-10">
               <div onclick="
            try{
@@ -47,7 +47,7 @@
             </div>
             </div>
             
-             <button class="btn-primary-3d h-50 clip-5 br-5 m-top-20 m-bottom-10 w-full bold"><span>Login Safely</span></button>
+             <button class="post h-50 clip-0 br-0 m-top-20 m-bottom-10 w-full bold"><span>Login Safely</span></button>
           
         </form>
     </section>
